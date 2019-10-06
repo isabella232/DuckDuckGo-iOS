@@ -1,3 +1,6 @@
+disabled_rules:
+  - trailing_whitespace
+  
 # Rule Config
 line_length: 150
 identifier_name:
