@@ -64,7 +64,7 @@ extension AboutViewController: Themable {
             
             let attributes: [NSAttributedString.Key: Any]
             if traitCollection.horizontalSizeClass == .regular,
-                traitCollection.verticalSizeClass == .regular {
+                traitCollection.verticalSizeClass == .regular { 
                 font = font.withSize(24.0)
                 attributes = [.foregroundColor: theme.aboutScreenTextColor,
                               .font: font]
@@ -76,7 +76,8 @@ extension AboutViewController: Themable {
             let decoratedText = NSMutableAttributedString(attributedString: attributedText)
             decoratedText.addAttributes(attributes, range: NSRange(location: 0, length: decoratedText.length))
             
-            descriptionText.attributedText = decoratedText
+            descriptionText.attributedText = decoratedText  
+                
         }
     }
 }
