@@ -58,6 +58,9 @@ extension AboutViewController: Themable {
         moreButton.setTitleColor(theme.aboutScreenButtonColor, for: .normal)
     }
     
+    
+    
+    
     private func decorateDescription(with theme: Theme) {
         if let attributedText = descriptionText.attributedText,
             var font = attributedText.attribute(NSAttributedString.Key.font, at: 0, effectiveRange: nil) as? UIFont {
