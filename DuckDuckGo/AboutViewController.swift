@@ -79,6 +79,10 @@ extension AboutViewController: Themable {
             let decoratedText = NSMutableAttributedString(attributedString: attributedText)
             decoratedText.addAttributes(attributes, range: NSRange(location: 0, length: decoratedText.length))
             
+                
+                
+                
+                
             descriptionText.attributedText = decoratedText  
                 
         }
