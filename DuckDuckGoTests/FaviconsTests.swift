@@ -100,6 +100,10 @@ class FaviconsTests: XCTestCase {
         
         let resource = Favicons.shared.defaultResource(forDomain: "example.com")
         XCTAssertEqual(resource?.cacheKey, "\(Favicons.Constants.salt)example.com".sha256())
+        
+        
+        
+        
         XCTAssertEqual(resource?.downloadURL, URL(string: "https://example.com/apple-touch-iconnn.png"))
         
     }
