@@ -30,6 +30,7 @@ class FaviconsTests: XCTestCase {
         BookmarkUserDefaults().bookmarks = []
         BookmarkUserDefaults().favorites = []
         
+        
         Favicons.Constants.tabsCache.clearDiskCache()
         Favicons.Constants.tabsCache.clearMemoryCache()
         Favicons.Constants.bookmarksCache.clearDiskCache()
@@ -88,6 +89,9 @@ class FaviconsTests: XCTestCase {
         case .alternativeSources(let sources):
             XCTAssertEqual(2, sources.count)
             XCTAssertEqual(sources[0].url, URL(string: "https://example.com/favicon.ico"))
+            
+            
+            
             XCTAssertEqual(sources[1].url, URL(string: "http://example.com/faviconnnn.ico"))
 
         default:
