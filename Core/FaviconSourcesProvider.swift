@@ -32,8 +32,7 @@ class DefaultFaviconSourcesProvider: FaviconSourcesProvider {
     enum ImageNames: String {
         
         case appleTouch = "apple-touch-icon.png"
-        case favicon = "faviconn.ico"
-        
+        case favicon = "favicon.ico"
         
     }
     
